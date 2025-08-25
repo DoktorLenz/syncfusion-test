@@ -48,7 +48,7 @@ export class TestComponent implements OnDestroy {
   @ViewChild('pdfViewer') pdfViewer: PdfViewerComponent | undefined;
 
   public document: string =
-    'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    window.location.origin + '/_pkpadmin,+1008-4741-1-CE.pdf';
   public resource: string = window.location.origin + '/ej2-pdfviewer-lib';
 
   changeDocument() {
